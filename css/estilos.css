@@ -1,0 +1,192 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    
+    box-sizing: content-box;
+   
+  }
+  
+  body{
+  
+    background-color: rgb(255, 253, 253);
+    font-family: 'Times New Roman', Times, serif;
+  
+  
+  
+  }
+  
+  #container{
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid rgb(248, 246, 246);
+    
+    box-sizing:border-box;
+  
+  }
+  header{
+  
+    background-color: aliceblue;
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+  
+  }
+  
+  nav {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border:  1px solid rgb(253, 253, 253);
+  
+  }
+  
+  nav ul li{
+  float: left;
+  list-style: none;
+  margin: 5px;
+  line-height: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  
+  
+  }
+  
+  .extra{
+    clear: both;
+  
+  }
+  
+  
+  
+  .isquierda{
+  float: left;
+  width: 40%;
+  background-color: black;
+  min-height: 1025px;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height:1.5em;
+  
+  box-sizing:border-box;
+  
+  }
+  
+  
+  .derecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  float: left;
+  width: 58%;
+  background-color: rgb(190, 193, 196);
+  min-height: 700px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height:1.5em;
+  min-height: 120vh
+  
+  
+  
+  }
+  
+  #CONTACTO{
+  background-color: rgb(153, 148, 148);
+  text-align: center;
+  font-family: Arial Black;
+  
+  box-sizing:border-box;
+  }
+  
+  
+  h1,h2{
+    text-align:center;
+    font-family:Cooper Black;
+    font-size: 36px;
+  
+  }
+  
+  
+  h3,h4{
+    text-align:center;
+    font-size: 28px;
+  }
+  
+  .foto-danilo{
+  
+    width: 80%; 
+    border-radius: 50%;
+    height: auto;
+  }
+  
+  .iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  
+  }
+  .iconos a{
+     font-size: 40px;
+     transition: all ease 300ms;
+    
+  
+  }
+  
+  .iconos a:hover{
+    color: red;
+    transform: scale(1.2);
+  }
+  .facebook{
+  color: blue;
+  }
+  
+  .instagram{
+  color: brown;
+  
+  }
+  
+  .linkedin{
+  color: rgb(73, 73, 243);
+  
+  }
+  
+  .github{
+  color: black;
+  
+  }
+  
+  
+  
+  footer{
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  }
+  
+  @media screen and (max-width:800px) {
+    .derecha{
+      width: 100%;
+    }
+    .isquierda{
+      width: 100%;
+    }
+    
+  } 
+  
+  @media screen and (max-width:400px) {
+    .container{
+    width: 100%;
+  
+    }
+  }
+  
+  
+  /* En este código se aplico colores oscuros tales como grises,
+     negros y blancos, para dar un aspecto sobrio 
+     ya que se trata de un currículo personal y profesional 
+    */
