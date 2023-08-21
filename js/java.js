@@ -17,7 +17,7 @@ function main () {
 		}
 	});
 
-	// Mostramos y ocultamos submenus
+	
 	$('.submenu').click(function(){
 		$(this).children('.children').slideToggle();
 	});
@@ -27,7 +27,7 @@ function enableDarkMode() {
     let main_body = document.body;
     main_body.classList.toggle("dark-mode");
 
-    // Check if checkbox is checked or not
+    
     if (document.getElementById('checkitem').checked) {
         console.log("checked");
     } else {
@@ -37,3 +37,4 @@ function enableDarkMode() {
 
 }
 
+//interacciones java//
