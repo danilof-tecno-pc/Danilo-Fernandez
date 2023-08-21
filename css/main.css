@@ -1,18 +1,88 @@
 * {
-	padding:0;
-	margin:0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-
-	
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Black;         
+    
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #ececec;
+}
 
+.logo {
+    max-width: 5rem;
+}
 
-/* prueva de imagen*/
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
 
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+/*Menu*/
 
 body {
 	
@@ -21,7 +91,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Arial Black';
 
 	/*claro prueva*/
 
@@ -29,11 +99,13 @@ body {
     color: #252525;
     transition: 0.5s ease-in-out;
 	
-	
+
+    
 
 }
 
 p{
+    font-family: 'Times New Roman', Times, serif;
 
 	background-color: rgb(159, 162, 163);
 
@@ -50,7 +122,7 @@ input[type="checkbox"] {
     width: 40px;
     height: 20px;
     background-color: #434343;
-    appearance: none;   /* Hides certain features of widgets */ 
+    appearance: none;    
     outline: none;
     border-radius: 20px;
     cursor: pointer;
@@ -116,148 +188,6 @@ input[type="checkbox"]:checked::before {
   /* Bordes*/
 
 
-/* menu*/
-.menu_bar {
-	display:none;
-}
-
-header {
-	width: 100%;
-}
-
-header nav {
-	background:#023859;
-	z-index:1000;
-	max-width: 1000px;
-	width:95%;
-	margin:20px auto;
-}
-
-header nav ul {
-	list-style:none;
-}
-
-header nav ul li {
-	display:inline-block;
-	position: relative;
-}
-
-header nav ul li:hover {
-	background:#E6344A;
-}
-
-header nav ul li a {
-	color:#e2dede;
-	display:block;
-	text-decoration:none;
-	padding: 20px;
-}
-
-header nav ul li a span {
-	margin-right:10px;
-}
-
-header nav ul li:hover .children {
-	display:block;
-}
-
-header nav ul li .children {
-	display: none;
-	background:#011826;
-	position: absolute;
-	width: 150%;
-	z-index:1000;
-}
-
-header nav ul li .children li {
-	display:block;
-	overflow: hidden;
-	border-bottom: 1px solid rgba(255,255,255,.5);
-}
-
-header nav ul li .children li a {
-	display: block;
-}
-
-header nav ul li .children li a span {
-	float: right;
-	position: relative;
-	top:3px;
-	margin-right:0;
-	margin-left:10px;
-}
-
-header nav ul li .caret {
-	position: relative;
-	top:3px;
-	margin-left:10px;
-	margin-right:0px;
-}
-
-@media screen and (max-width: 800px) {
-	body {
-		padding-top:80px;
-	}
-
-	.menu_bar {
-		display:block;
-		width:100%;
-		position: fixed;
-		top:0;
-		background:#E6344A;
-	}
-
-	.menu_bar .bt-menu {
-		display: block;
-		padding: 20px;
-		color: #1a1919;
-		overflow: hidden;
-		font-size: 25px;
-		font-weight: bold;
-		text-decoration: none;
-	}
-
-	.menu_bar span {
-		float: right;
-		font-size: 40px;
-	}
-
-	header nav {
-		width: 80%;
-		height: calc(100% - 80px);
-		position: fixed;
-		right:100%;
-		margin: 0;
-		overflow: scroll;
-	}
-
-	header nav ul li {
-		display: block;
-		border-bottom:1px solid rgba(255,255,255,.5);
-	}
-
-	header nav ul li a {
-		display: block;
-	}
-
-	header nav ul li:hover .children {
-		display: none;
-	}
-
-	header nav ul li .children {
-		width: 100%;
-		position: relative;
-	}
-
-	header nav ul li .children li a {
-		margin-left:20px;
-	}
-
-	header nav ul li .caret {
-		float: right;
-	}
-}
-/*menu*/
 
 
 
@@ -268,7 +198,7 @@ header nav ul li .caret {
 	justify-content: center;
 	align-items: center;
 
-    width: 50%; 
+    width: 70%; 
     border-radius: 50%;
     height: auto;
 	margin-top: 30px;
@@ -353,4 +283,15 @@ background-color: rgb(243, 57, 57);
     }
   }
 
+
+  html {
+    scroll-behavior:smooth;
+  }
+
+  h4{
+
+    font-family: Brush Script MT;
+    font-size: 150%;
+
+}
   
